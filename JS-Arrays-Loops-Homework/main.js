@@ -70,10 +70,8 @@ console.log(result);
 //TASK 6
 
 var ouput = "";
-for (var i = 1; i <= 3; i++) {
-     for (var j = 1; j <= i; j++) {
-         console.log(ouput += "*")
-     }
+for (var i = 0; i < 6; i++) {
+   console.log(ouput += "*"); 
 }
 
 console.log(ouput);
