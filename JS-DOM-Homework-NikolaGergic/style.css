@@ -1,0 +1,71 @@
+/* General */
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	text-transform: uppercase;
+	font-family: Helvetica;
+	color: #ed3f34;
+	margin-top: 0;
+}
+
+/* Header */
+
+header {
+	background-color: #ccc;
+	box-shadow: 0 0 5px #000;
+	padding: 10px 0;
+}
+
+header .logo {
+	display: block;
+}
+
+header .logo img {
+	width: 150px;
+}
+
+.main-wraper {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+/* Main */
+
+main {
+	background-color: #efefef;
+	padding-top: 20px;
+}
+
+section.players {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+
+section.players .player {
+	margin: 30px;
+	background-color: #fff;
+	width: 22%;
+	margin-right: 4%;
+}
+
+section.players .player:nth-child(4n) {
+		margin-right: 0;
+}
+
+section.players .player img {
+	width: 250px;
+}
+
+.player > div {
+    padding: 5px 15px;
+}
+
+section.players.substitutions {
+	border-top: 2px solid red;
+}
