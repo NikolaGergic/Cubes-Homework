@@ -1,0 +1,176 @@
+* {box-sizing: border-box;}
+
+
+body {
+	font-family: Verdana, sans-serif;
+	background-image: url("img/cl.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+.mySlides {display: none;}
+
+img {vertical-align: middle;}
+
+
+h2 {
+	color: red;
+
+}
+
+.typewriter p {
+	color: red;
+}
+
+
+
+.typewriter {
+  overflow: hidden; 
+  border-right: .15em solid white; 
+  white-space: nowrap; 
+  margin: 0 auto; 
+  letter-spacing: .15em; 
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: red; }
+}
+
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  left: 100px;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 25px;
+  width: 100%;
+  text-align: center;
+}
+
+
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #053d5c;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+
+
+/* Thumbs */
+
+.thumbs {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.thumbs li, .thumbs li a {
+  width: 98px;
+  height: 55px;
+}
+
+.thumbs a {
+  /*display: block;*/
+  position: relative;
+  font: bold 12px/25px Arial, sans-serif;
+  color: #515151;
+  text-decoration: none;
+  text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.25), inset 1px 1px 0px rgba(0, 0, 0, 0.15);
+}
+
+.thumbs li a img {
+  width: 90px;
+  height: 45px;
+  border: 4px solid #3498DB;
+}
+
+.thumbs span {
+	color: #fff;
+	display: block;
+	margin-top: 8px;
+}
+
+.thumbs li a:hover span {
+  position: absolute;
+  z-index: 101;
+  bottom: -30px;
+  display: block;
+  width: 98px;
+  height: 25px;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.4);
+  background: #fff;
+
+}
+
+.thumbs li a:hover span::before {
+  width: 0;
+  height: 0;
+  border-bottom: 5px solid white;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  content: "Red Star!";
+  position: absolute;
+  top: -5px;
+  left: 44px;
+}
+
+
+
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
