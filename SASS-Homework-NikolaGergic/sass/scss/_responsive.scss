@@ -1,0 +1,221 @@
+/* RESPONSIVE */
+
+@media only screen and (max-width: 480px) {
+	#section-home {
+		position: unset;
+		transform: unset;
+		width: $widthFull;
+		height: $widthFull;
+		overflow: auto;
+	}
+
+	#section-design {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		height: unset;
+		margin: 0;
+		padding: 0;
+			article {
+			align-items: center;
+			margin-left: 10%;
+		}
+	}
+
+	.form-media {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	#main-section {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	#team {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		article {
+			width: $widthFull;
+			margin-right: 10%;
+		}
+	}
+}
+
+@media only screen and (max-width: 1200px) {
+	#main-section {
+		article {
+			width: 44%;
+		}
+		#hover-project {
+		width: 44%;
+		}
+	}
+	footer {
+		.footer {
+		text-align: center;
+		}
+	}
+}
+
+@media only screen and (max-width: 1100px) {
+	aside {
+		#team { 
+			display: block;
+			.team {
+				width: 49%;
+				display: inline-block;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 980px) {
+	header {
+		h1 {
+		font-size: 50px
+		}
+		#first-p {
+		font-size: 20px;
+		}
+	}	
+	#section-design {
+		article {
+			width: 50%;
+		}
+	}
+	#testimonials {
+		p {
+		font-size: 20px;
+		}
+	}
+}
+
+@media only screen and (max-width: 900px) {
+	
+	#form {
+		form {
+			flex-wrap: wrap;
+			padding: 0 15px;
+			#email {
+				width: 100%;
+				margin: 40px 0;
+			}
+			#submit {
+				margin: 0 0 10px;
+			}
+		}
+	}
+	#hello-form {
+		padding: 0 15px;
+	}
+	#hello-form {
+		#email-hello{
+			width: $widthFull;
+			}
+		#subject {
+			width: $widthFull;
+		}
+		#hire-us {
+			margin-bottom: 10px;
+		}
+	}
+	main {
+		#main-section{
+			article {
+				width: $widthFull;
+			}
+			#hover-project {
+				width: $widthFull;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	header {
+		h1 {
+		font-size: 40px
+		}
+		#first-p {
+		font-size: 15px;
+		}
+	}
+	#testimonials {
+		p {
+		font-size: 15px;
+		}
+		span {
+		font-weight: 400;
+		}
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	aside {
+		#team {
+			.team {
+				width: &widthFull;
+			}
+		}
+	}
+	#hello-form {
+		a{
+			img {
+				width: 85%;
+		    	margin: 0 auto;
+		    	display: block;
+		    }
+		}
+	}
+}
+
+@media only screen and (max-width: 545px) {
+	nav {
+		ul {
+			flex-wrap: wrap;
+			#studio {
+				width: 100%;
+				padding: 0;
+				text-align: center;
+			}
+			#menu {
+				padding-top: 5px;
+				justify-content: center;
+				margin: 0 auto;
+				padding:5px 0;
+				a {
+					padding: 5px 64px;
+				}
+				#dropdown {
+					li {
+						a {
+							padding: 0;
+							text-align: center;
+							display: block;
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	header {
+		#first-p {
+		font-size: 14px;
+		}
+	}
+
+	#hello-form {
+		a {
+		width: 50%;
+		}
+	}
+}
+
+	
+
+
