@@ -1,0 +1,6 @@
+***** ES6 SYNTAX HOMEWORK *****
+
+
+WHAT SHOULD YOU DO ?
+
+- Take Players project and convert it to ES6
